@@ -1,0 +1,70 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": ".root"
+    },
+    {
+      "path": "api"
+    },
+  ],
+  "settings": {
+    "npm.autoDetect": "off",
+    "json.format.enable": false,
+    "[json]": {
+      // "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2
+    },
+    "[jsonc]": {
+      // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+      "files.trimTrailingWhitespace": false
+    },
+
+    "editor.linkedEditing": true,
+
+    "debug.internalConsoleOptions": "neverOpen",
+    "debug.javascript.unmapMissingSources": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true,
+      "source.fixAll.markdownlint": true
+    },
+
+    "npm.packageManager": "pnpm",
+
+    "files.exclude": {
+      "api": true,
+      "**/.git": true,
+      "**/dist": true,
+      "**/node_modules": true
+    },
+
+    "workbench.iconTheme": "vscode-icons",
+
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "sqlite",
+        "database": "${workspaceFolder:api}/prisma/dev.db"
+      }
+    ],
+    "sqltools.useNodeRuntime": true,
+
+    "editor.fontFamily": "Consolas, 'Courier New', monospacemo",
+
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "cSpell.words": [
+
+    ]
+  },
+  "extensions": {
+    "recommendations": []
+  }
+}
