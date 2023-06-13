@@ -7,17 +7,32 @@
     {
       "path": "Rask.Api"
     },
+    {
+      "path": "Rask.Api.Data"
+    }
   ],
   "settings": {
-    "npm.autoDetect": "off",
+    "csharp.format.enable": false,
+    "[csharp]": {
+      "editor.defaultFormatter": "ms-dotnettools.csharp",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4,
+    },
+
+    "omnisharp.useModernNet": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    // "omnisharp.useEditorFormattingSettings": true,
+    "omnisharp.sdkVersion": "8.0.100-preview.4.23260.5",
+    "omnisharp.organizeImportsOnFormat": true,
+
     "json.format.enable": false,
     "[json]": {
-      // "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.defaultFormatter": "vscode.json-language-features",
       "editor.formatOnSave": true,
       "editor.tabSize": 2
     },
     "[jsonc]": {
-      // "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
       "editor.formatOnSave": true,
@@ -27,8 +42,10 @@
 
     "editor.linkedEditing": true,
 
+    "dotnet.defaultSolution": "d:\\rask-api-dotnet\\rask-api-dotnet.sln",
+
+
     "debug.internalConsoleOptions": "neverOpen",
-    "debug.javascript.unmapMissingSources": true,
     "debug.showBreakpointsInOverviewRuler": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": true,
@@ -36,15 +53,15 @@
       "source.fixAll.markdownlint": true
     },
 
-    "npm.packageManager": "pnpm",
-
     "files.exclude": {
       "Rask.Api": true,
+      "Rask.Api.Data": true,
       "**/.git": true,
       "**/obj": true,
       "**/bin": true,
     },
 
+    "npm.autoDetect": "off",
 
     "workbench.iconTheme": "vscode-icons",
 
@@ -63,8 +80,8 @@
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "cSpell.words": [
-
-    ]
+      "Randomizer"
+    ],
   },
   "extensions": {
     "recommendations": []

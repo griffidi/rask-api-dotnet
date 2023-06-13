@@ -2,15 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>Preview</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
     <NoDefaultLaunchSettingsFile>True</NoDefaultLaunchSettingsFile>
+    <RootNamespace>Rask.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0-preview.4.23260.4" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rask.Api.Data\Rask.Api.Data.csproj" />
   </ItemGroup>
 
 </Project>
