@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.Sqlite.NodaTime" Version="7.0.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-preview.11.3" />
+    <PackageReference Include="HotChocolate.Data" Version="14.0.0-preview.11.3" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="14.0.0-preview.11.3" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0-preview.4.23260.4" />
   </ItemGroup>
 

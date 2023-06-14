@@ -1,89 +1,79 @@
 {
-  "folders": [
-    {
-      "path": ".",
-      "name": ".root"
+    "folders": [
+        {
+            "path": ".",
+            "name": ".root"
+        },
+        {
+            "path": "Rask.Api"
+        },
+        {
+            "path": "Rask.Api.Data"
+        }
+    ],
+    "settings": {
+        "csharp.format.enable": false,
+        "[csharp]": {
+            "editor.defaultFormatter": "ms-dotnettools.csharp",
+            "editor.formatOnSave": true,
+            "editor.tabSize": 4,
+        },
+        "omnisharp.useModernNet": true,
+        "omnisharp.enableEditorConfigSupport": true,
+        // "omnisharp.useEditorFormattingSettings": true,
+        "omnisharp.sdkVersion": "8.0.100-preview.4.23260.5",
+        "omnisharp.organizeImportsOnFormat": true,
+        "json.format.enable": true,
+        "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+            "editor.formatOnSave": true,
+            "editor.tabSize": 4
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+            "editor.tabSize": 4
+        },
+        "[markdown]": {
+            "editor.formatOnSave": true,
+            "editor.formatOnPaste": true,
+            "files.trimTrailingWhitespace": false
+        },
+        "editor.linkedEditing": true,
+        "dotnet.defaultSolution": "d:\\rask-api-dotnet\\rask-api-dotnet.sln",
+        "debug.internalConsoleOptions": "neverOpen",
+        "debug.showBreakpointsInOverviewRuler": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+            "source.fixAll.markdownlint": true
+        },
+        "files.exclude": {
+            "Rask.Api": true,
+            "Rask.Api.Data": true,
+            "**/.git": true,
+            "**/obj": true,
+            "**/bin": true,
+        },
+        "npm.autoDetect": "off",
+        "workbench.iconTheme": "vscode-icons",
+        "sqltools.connections": [
+            {
+                "previewLimit": 50,
+                "driver": "SQLite",
+                "name": "RaskDotNet",
+                "database": "C:\\Users\\dusti\\AppData\\Local\\dev.db"
+            }
+        ],
+        "sqltools.useNodeRuntime": true,
+        "editor.fontFamily": "Consolas, 'Courier New', monospacemo",
+        "terminal.integrated.cwd": "${workspaceFolder}",
+        "terminal.integrated.defaultProfile.windows": "PowerShell",
+        "cSpell.words": [
+            "Noda",
+            "Randomizer"
+        ],
     },
-    {
-      "path": "Rask.Api"
-    },
-    {
-      "path": "Rask.Api.Data"
+    "extensions": {
+        "recommendations": []
     }
-  ],
-  "settings": {
-    "csharp.format.enable": false,
-    "[csharp]": {
-      "editor.defaultFormatter": "ms-dotnettools.csharp",
-      "editor.formatOnSave": true,
-      "editor.tabSize": 4,
-    },
-
-    "omnisharp.useModernNet": true,
-    "omnisharp.enableEditorConfigSupport": true,
-    // "omnisharp.useEditorFormattingSettings": true,
-    "omnisharp.sdkVersion": "8.0.100-preview.4.23260.5",
-    "omnisharp.organizeImportsOnFormat": true,
-
-    "json.format.enable": false,
-    "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features",
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[markdown]": {
-      "editor.formatOnSave": true,
-      "editor.formatOnPaste": true,
-      "files.trimTrailingWhitespace": false
-    },
-
-    "editor.linkedEditing": true,
-
-    "dotnet.defaultSolution": "d:\\rask-api-dotnet\\rask-api-dotnet.sln",
-
-
-    "debug.internalConsoleOptions": "neverOpen",
-    "debug.showBreakpointsInOverviewRuler": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true,
-      "source.fixAll.markdownlint": true
-    },
-
-    "files.exclude": {
-      "Rask.Api": true,
-      "Rask.Api.Data": true,
-      "**/.git": true,
-      "**/obj": true,
-      "**/bin": true,
-    },
-
-    "npm.autoDetect": "off",
-
-    "workbench.iconTheme": "vscode-icons",
-
-    "sqltools.connections": [
-      {
-        "previewLimit": 50,
-        "driver": "SQLite",
-        "name": "sqlite",
-        "database": "${workspaceFolder:api}/prisma/dev.db"
-      }
-    ],
-    "sqltools.useNodeRuntime": true,
-
-    "editor.fontFamily": "Consolas, 'Courier New', monospacemo",
-
-    "terminal.integrated.cwd": "${workspaceFolder}",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "cSpell.words": [
-      "Randomizer"
-    ],
-  },
-  "extensions": {
-    "recommendations": []
-  }
 }

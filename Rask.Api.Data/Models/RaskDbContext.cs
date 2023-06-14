@@ -8,7 +8,7 @@ public class RaskDbContext : DbContext
     public DbSet<Employee> Employees { get; set; } = null!;
     public DbSet<User> Users { get; set; } = null!;
 
-    public string DbPath { get; }
+    public string DbPath { get; } = null!;
 
     public RaskDbContext()
     {
@@ -17,6 +17,8 @@ public class RaskDbContext : DbContext
         var path = Environment.GetFolderPath(folder);
         DbPath = Path.Combine(path, "dev.db");
     }
+
+    public RaskDbContext(DbContextOptions<RaskDbContext> options) : base(options) { }
 
     // The following configures EF to create a Sqlite database file in the
     // special "local" folder for your platform.
